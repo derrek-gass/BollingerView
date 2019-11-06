@@ -11,8 +11,6 @@ function parseData(parse) {
 		d.low = +d.low;
 		d.close = +d.close;
 		d.volume = +d.volume;
-
-
 		return d;
 	};
 }
@@ -20,7 +18,7 @@ function parseData(parse) {
 const parseDate = timeParse("%Y-%m-%d");
 
 export function getData() {
-	const promiseMSFT = fetch("../data/PCG.tsv")
+	const promiseMSFT = fetch("https://raw.githubusercontent.com/lazertooth/BollingerView/master/Bollinger/data/PCG.tsv")
 		.then(response => response.text())
 		.then(data => tsvParse(data, parseData(parseDate)))
 	return promiseMSFT;
