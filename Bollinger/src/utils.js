@@ -18,8 +18,8 @@ function parseData(parse) {
 const parseDate = timeParse("%Y-%m-%d");
 
 export function getData() {
-	const promiseMSFT = fetch("https://cdn.jsdelivr.net/gh/lazertooth/BollingerView@master/Bollinger/data/PCG")
+	const promiseMSFT = fetch("https://cdn.jsdelivr.net/gh/lazertooth/BollingerView@master/Bollinger/data/PCG.tsv")
 		.then(response => response.text())
-		.then(data => csvParse(data, parseData(parseDate)))
+		.then(data => tsvParse(data, parseData(parseDate)))
 	return promiseMSFT;
 }
