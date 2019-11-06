@@ -18,7 +18,7 @@ function parseData(parse) {
 const parseDate = timeParse("%Y-%m-%d");
 
 export function getData() {
-	const promiseMSFT = fetch("https://cdn.jsdelivr.net/gh/lazertooth/BollingerView@master/Bollinger/data/MSFT.tsv")
+	const promiseMSFT = fetch("https://cdn.jsdelivr.net/gh/rrag/react-stockcharts@master/docs/data/AAPL_full.tsv")
 		.then(response => response.text())
 		.then(data => tsvParse(data, parseData(parseDate)))
 	return promiseMSFT;
