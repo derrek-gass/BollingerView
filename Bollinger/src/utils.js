@@ -15,7 +15,7 @@ function parseData(parse) {
 	};
 }
 
-const parseDate = timeParse("%Y-%m-%d");
+const parseDate = timeParse("%YYYY-%mm-%dd");
 
 export function getData() {
 	const promiseMSFT = fetch("https://raw.githubusercontent.com/lazertooth/BollingerView/master/Bollinger/data/PCG.tsv")

@@ -90,7 +90,7 @@ class CandleStickChartWithBollingerBandOverlay extends React.Component {
 				ratio={ratio}
 				margin={{ left: 70, right: 70, top: 10, bottom: 30 }}
 				type={type}
-				seriesName="MSFT"
+				seriesName="PCG"
 				data={data}
 				xScale={xScale}
 				xAccessor={xAccessor}
