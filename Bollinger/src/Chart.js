@@ -29,7 +29,7 @@ import { last } from "react-stockcharts/lib/utils";
 
 const bbStroke = {
 	top: "#964B00",
-	middle: "#000000",
+	middle: "#FFF",
 	bottom: "#964B00",
 };
 

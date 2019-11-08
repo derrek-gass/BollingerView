@@ -1,0 +1,14 @@
+body {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+/* this is a class */
+.react-stockcharts-tooltip-label{
+ }
+
+ /* this is an element */
+tspan{
+
+   fill: rgb(255,255,255);
+ }
